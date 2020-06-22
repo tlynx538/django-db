@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{{% block content %}
+
+<h1>Members List</h1>
+<br>    
+{% for member in members %}
+    <strong> Name: {{member.fname}} {{member.lname}} </strong><br>
+    Age: {{member.age}}<br>
+    Email: {{member.email}}<br>
+    <hr>
+{% endfor %}
+{% endblock content %}}
